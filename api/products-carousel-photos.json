@@ -1,0 +1,37 @@
+[
+    {
+       "id":1,
+       "productName":"Chocolate Cake",
+       "src":"img/products-carousel/chocolate-cake.jpg"
+    },
+    {
+       "id":2,
+       "productName":"Pink Cake",
+       "src":"img/products-carousel/pink-cake.jpg"
+    },
+    {
+       "id":3,
+       "productName":"White Cake",
+       "src":"img/products-carousel/white-cake.jpg"
+    },
+    {
+       "id":4,
+       "productName":"Chocolate Piece of cake",
+       "src":"img/products-carousel/chocolate-piece-of-cake.jpg"
+    },
+    {
+       "id":5,
+       "productName":"Chocolate Piece of cake with strawberry",
+       "src":"img/products-carousel/chocolate-piece-of-cake-with-strawberry.jpg"
+    },
+    {
+       "id":6,
+       "productName":"Chocolate cake with peanut",
+       "src":"img/products-carousel/chocolate-cake-with-peanut.jpg"
+    },
+    {
+       "id":7,
+       "productName":"Tiramisu",
+       "src":"img/products-carousel/tiramisu-cake.jpg"
+    }
+]

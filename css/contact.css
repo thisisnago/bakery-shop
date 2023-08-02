@@ -1,0 +1,130 @@
+.contact {
+    padding: 60px 0;
+    background-color: var(--dark-bg-color);
+    color: var(--contact-text-color);
+    text-align: center;
+}
+
+.contacts-element__content a {
+    color: var(--contact-text-color);
+}
+
+.contact__info__heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact__info__subheading {
+    margin-top: 15px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.contact__info__contacts-container {
+    margin-top: 15px;
+}
+
+.contacts-element {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contacts-element__icon {
+    width: 20px;
+}
+
+.contacts-element__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-element__icon svg * {
+    fill: var(--contact-icon-color);
+}
+
+.contact__info__map-container {
+    margin-top: 15px;
+    width: 100%;
+    height: 350px;
+}
+
+.contact__info__map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--contact-form-bg-color);
+    border-radius: 4px;
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+}
+
+.contact__form > * {
+    margin: 10px 0;
+
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    height: 20px;
+    padding: 20px 10px;
+    text-align: center;
+
+    border: 2px solid var(--contact-form-elements-border-color);
+    border-radius: 3px;
+
+    color: var(--contact-form-text-color);
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+    font-family: var(--main-font);
+    font-size: 13px;
+}
+
+.contact__form input:focus {
+    outline: none;
+}
+
+.contact__form textarea.contact__form__message {
+    padding: 5px;
+    resize: none;
+    height: 150px;
+}
+
+
+@media(min-width: 768px) {
+    .contact .container {
+        /* border: 1px solid red; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+
+    .contact .container > * {
+        width: 46%;
+    }
+
+    .contact__info__map-container {
+        height: 250px;
+    }
+
+    .contact__form {
+        height: 100%;
+        margin-top: 0;
+
+    }
+}
