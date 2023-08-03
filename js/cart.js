@@ -84,12 +84,8 @@ class Cart {
 
     createCartProductDomString(product) {
         return `<div class="cart-modal__product cart-row">
-                    <div class="cart-mocal__product-image">
-                        <img src="img/products/${product.image}" alt="${product.title}">
-                    </div>
-
                     <div class="cart-modal__product__title cart__title-column">
-                        ${product.title}
+                        ${product.name}
                     </div>
 
                     <div class="cart-modal__product__quantity cart__quantity-column">
@@ -123,7 +119,6 @@ class Cart {
 
         document.querySelector(".cart-btn__container").classList.add("animate");
         setTimeout(() => document.querySelector(".cart-btn__container").classList.remove("animate"), 300);
-        // this.cart[id] = (this.cart[id] || 0) + 1;
 
     }
 
@@ -196,7 +191,6 @@ class Cart {
             }
         }).then(response => {
             if (response.ok) {
-                // status.innerHTML = "Thanks for your submission!";
                 form.reset()
                 this.cart = {};
                 this.saveCart();
@@ -211,7 +205,6 @@ class Cart {
                 })
             }
         }).catch(error => {
-            // status.innerHTML = "Oops! Something went wrong. Try again or contact us."
             this.hideModal(this.orderModalContainer);
             showInfoPopup("error", "Oops! Something went wrong. Try again or contact us.")
         });

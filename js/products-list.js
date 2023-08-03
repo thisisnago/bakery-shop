@@ -21,12 +21,12 @@ class ProductsList {
     createProductCard(product) {
         return `<div class="product-card">    
         <div class="product-card__image-container">
-            <img class="product-card__image"  data-id=${product.id} src="img/products/${product.image}" alt="${product.title}">
+            <img class="product-card__image"  data-id=${product.id} src="img/products/${product.image}" alt="${product.name}">
         </div>
 
         <div class="product-card__main">
             <p class="product-card__name">
-                ${product.title}
+                ${product.name}
             </p>
         </div>
 
@@ -76,7 +76,7 @@ class ProductsList {
         const infoModal = document.querySelector(".product-info-modal");
 
         infoModal.querySelector(".product-info-modal__image img").src = `img/products/${product.image}`;
-        infoModal.querySelector(".product-info-modal__title").innerHTML = product.title;
+        infoModal.querySelector(".product-info-modal__title").innerHTML = product.name;
         infoModal.querySelector(".product-info-modal__description").innerHTML = product.description;
         infoModal.querySelector(".product-info-modal__product-price").innerHTML = `£${product.price}`;
         infoModal.querySelector(".product-info-modal__info").scrollTop = 0;

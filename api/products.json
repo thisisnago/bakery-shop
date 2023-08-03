@@ -1,77 +1,77 @@
 [
    {
       "id": "1",
-      "title": "Cream Cake With Cherries",
+      "name": "Cream Cake With Cherries",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 15.99,
       "image": "cream-cake-cherries.jpeg"
    },
    {
       "id": "2",
-      "title": "Cream Cake With Fruits",
+      "name": "Cream Cake With Fruits",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 16.99,
       "image": "cream-cake-fruits.jpeg"
    },
    {
       "id": "3",
-      "title": "Cream Cake With Strawberries",
+      "name": "Cream Cake With Strawberries",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 26.99,
       "image": "cream-cake-strawberries.jpeg"
    },
    {
       "id": "4",
-      "title": "Cream Chocolate Cake With Cherries",
+      "name": "Cream Chocolate Cake With Cherries",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 13.99,
       "image": "cream-chocolate-cake-cherries.jpeg"
    },
    {
       "id": "5",
-      "title": "Cream Chocolate Cake",
+      "name": "Cream Chocolate Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 19.99,
       "image": "cream-chocolate-cake.jpeg"
    },
    {
       "id": "6",
-      "title": "Fruit Chocolate Birthday Cake",
+      "name": "Fruit Chocolate Birthday Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 18.99,
       "image": "fruit-chocolate-birthday-cake.jpeg"
    },
    {
       "id": "7",
-      "title": "Cream Chocolate With Mandarins",
+      "name": "Cream Chocolate With Mandarins",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 13.99,
       "image": "cream-cake-mandarins.jpeg"
    },
    {
       "id": "8",
-      "title": "Cream Cocoa Cake",
+      "name": "Cream Cocoa Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 20.99,
       "image": "cream-cocoa-cake.jpeg"
    },
    {
       "id": "9",
-      "title": "Cream Coffee Cake",
+      "name": "Cream Coffee Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 18.99,
       "image": "cream-coffee-cake.jpeg"
    },
    {
       "id": "10",
-      "title": "Walnut Cake",
+      "name": "Walnut Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 21.99,
       "image": "walnut-cake.jpeg"
    },
    {
       "id": "11",
-      "title": "Cream Vanilla Cake",
+      "name": "Cream Vanilla Cake",
       "description": "Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!Three deep layers of chocolate sponge sandwich together and finished with our signature chocolate buttercream. The gateaux is crowned with a mountain of chocolate favourites including buttons, Cadbury Dairy Milk Caramel and Cadbury Flake. This ones sure to satisfy even the biggest of chocoholics!",
       "price": 22.99,
       "image": "cream-vanilla-cake.jpeg"

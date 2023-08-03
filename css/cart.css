@@ -45,10 +45,6 @@
     width: 30%;
 }
 
-.cart-mocal__product-image {
-    display: none;
-}
-
 .cart-modal__product__quantity {
     display: flex;
     align-items: center;

@@ -1,12 +1,5 @@
 (function () {
 
-    // function mouseTracker(ev) {
-    //     console.log(ev.target);
-    // }
-
-    // document.body.addEventListener('click', mouseTracker);
-
-
     const burgerButton = document.querySelector(".header-nav__burger");
     const navWrapper = document.querySelector(".header-nav__menu-wrapper__container");
     const navLinks = document.querySelectorAll(".header-nav__link");

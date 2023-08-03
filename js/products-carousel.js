@@ -1,26 +1,4 @@
 (async function () {
-    // const carouselPhotos = [
-    //     {
-    //         id: 1,
-    //         productName: "Chocolate Cake",
-    //         src: "img/products-carousel/chocolate-cake.jpg"
-    //     },
-    //     {
-    //         id: 2,
-    //         productName: "Pink Cake",
-    //         src: "img/products-carousel/pink-cake.jpg"
-    //     },
-    //     {
-    //         id: 3,
-    //         productName: "White Cake",
-    //         src: "img/products-carousel/white-cake.jpg"
-    //     },
-    //     {
-    //         id: 4,
-    //         productName: "Chocolate Piece of cake",
-    //         src: "img/products-carousel/chocolate-piece-of-cake.jpg"
-    //     },
-    // ];
 
     const carouselPhotos = await (await fetch("api/products-carousel-photos.json")).json();
 
