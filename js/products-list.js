@@ -3,19 +3,47 @@ class ProductsList {
     constructor() {
         this.productsContainer = document.querySelector(".products-container");
         this.productsService = new ProductsService();
+        this.sortType = 'alphabeticalAscending'; // alphabeticalAscending, alphabeticalDescending, numericalAscending, numericalDescending
         this.renderProducts();
     }
     
     async renderProducts() {
         
         let productsListDomString = ``;
-        const products = await this.productsService.getProducts();
+        let products = await this.productsService.getProducts();
+        if (this.sortType === 'alphabeticalAscending' || this.sortType === 'alphabeticalDescending') {
+            products.sort(this.sortProducts.bind(this));
+        } else if (this.sortType === 'numericalAscending') {
+            products.sort((a, b) => a.price - b.price)
+        } else if (this.sortType === 'numericalDescending') {
+            products.sort((a, b) => b.price - a.price)
+        } 
         products.forEach(product => {
             productsListDomString += this.createProductCard(product);
         });
         
         this.productsContainer.innerHTML = productsListDomString;
         this.addEventListeners();
+    }
+    
+    sortProducts(prodA, prodB) {
+        if (prodA.name < prodB.name) {
+            if (this.sortType === 'alphabeticalAscending') {
+                return -1;
+            } else if (this.sortType === 'alphabeticalDescending') {
+                return 1;
+            }
+        } 
+        
+        if (prodA.name > prodB.name) {
+            if (this.sortType === 'alphabeticalAscending') {
+                return 1;
+            } else if (this.sortType === 'alphabeticalDescending') {
+                return -1;
+            }
+        }
+        
+        return 0;
     }
 
     createProductCard(product) {
@@ -53,6 +81,13 @@ class ProductsList {
         document.querySelectorAll(".product-card__image").forEach(img => img.addEventListener("click", this.showProductInfo.bind(this)));
         document.querySelectorAll(".buy-btn").forEach( btn => btn.addEventListener('click', this.addProductToCart));
         document.querySelector(".product-info-modal .buy-btn").addEventListener('click', this.closeInfoModal);
+        document.querySelector(".products__sort-type-selector").addEventListener("change", this.changeSortType.bind(this));
+
+    }
+
+    changeSortType() {
+        this.sortType = document.querySelector(".products__sort-type-selector").value;
+        this.renderProducts();
     }
 
     addProductToCart(ev) {

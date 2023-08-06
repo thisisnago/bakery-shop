@@ -525,9 +525,25 @@
         <section class="products" id="products">
             <div class="container">
 
-                <p class="products__title">
-                    Products
-                </p>
+                <div class="products__top-section">
+                    <p class="products__title">
+                        Products
+                    </p>
+
+                    <div class="products__sort-type-selector__container">
+                        <div class="products__sort-type-selector__title">
+                            Sort by
+                        </div>
+
+                        <select name="sortType" class="products__sort-type-selector" id="">
+                            <option value="alphabeticalAscending" selected>Name - A to Z</option>
+                            <option value="alphabeticalDescending">Name - Z to A</option>
+                            <option value="numericalAscending">Price - Low to High</option>
+                            <option value="numericalDescending">Price - High to Low</option>
+                        </select>
+                    </div>
+
+                </div>
 
                 <div class="products-container"></div>
             </div>
