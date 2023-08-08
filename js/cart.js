@@ -3,14 +3,13 @@ class Cart {
         if (Cart._instance) return Cart._instance;
         Cart._instance = this;
         this.cart = JSON.parse(localStorage.getItem("cart") || "{}");
+        this.totalPrice = 0;
         this.cartContainer = document.querySelector(".cart-modal__container");
         this.orderModalContainer = document.querySelector(".order-modal__container");
         this.productsService = new ProductsService();
         this.addEventListeners();
         this.renderCart();
         this.saveCart();
-
-
     }
 
     addEventListeners() {
@@ -35,19 +34,10 @@ class Cart {
         console.log("+");
     }
 
-    // hideCart() {
-    //     this.cartContainer.classList.remove("active");
-    //     document.body.classList.remove("lock");
-    // }
-
-    // hideOrderModal() {
-    //     this.orderModalContainer.classList.remove("active");
-    //     document.body.classList.remove("lock");
-    // }
-
     async renderCart() {
         let cartDomString = ``;
-        let total = 0;
+        // let total = 0;
+        this.totalPrice = 0
 
         let totalProductsAmount = 0;
 
@@ -55,14 +45,13 @@ class Cart {
 
         if (Object.keys(this.cart).length === 0) {
             cartDomString = `The cart is empty`;
-            // this.hideCart();
             this.hideModal(this.cartContainer);
             document.querySelector(".cart-btn__container").classList.remove("active");
         } else {
             for (let productId in this.cart) {
                 const product = await this.productsService.getProductById(productId);
                 cartDomString += this.createCartProductDomString(product);
-                total += this.cart[product.id] * product.price;
+                this.totalPrice += this.cart[product.id] * product.price;
                 totalProductsAmount = Object.keys(this.cart).length;
             }
             document.querySelector(".cart-btn__container").classList.add("active");
@@ -74,8 +63,16 @@ class Cart {
             }
         };
 
+        const formatter = new Intl.NumberFormat('en-GB', {
+            style: 'currency',
+            currency: 'GBP',          
+          });
+
+        this.totalPrice = formatter.format(this.totalPrice);
+
         cartModal.querySelector(".cart-modal__products-container").innerHTML = cartDomString;
-        this.cartContainer.querySelector(".cart-modal__products__bottom__price").innerHTML = `£${total.toFixed(2)}`;
+        // this.cartContainer.querySelector(".cart-modal__products__bottom__price").innerHTML = `£${total.toFixed(2)}`;
+        this.cartContainer.querySelector(".cart-modal__products__bottom__price").innerHTML = `${this.totalPrice}`;
 
         document.querySelectorAll(".plus-btn").forEach(btn => btn.addEventListener("click", (ev) => this.changeQuantity(ev, this.addProductOperation)));
         document.querySelectorAll(".minus-btn").forEach(btn => btn.addEventListener("click", (ev) => this.changeQuantity(ev, this.deleteProductOperation)));
@@ -165,7 +162,18 @@ class Cart {
         this.orderModalContainer.classList.toggle("active");
     }
 
-    order(event) {
+    async formatCart() {
+        let newCart = {};
+        
+        for (let key in this.cart) {
+            let product = await this.productsService.getProductById(key);
+            newCart[product.name] = this.cart[key];
+        }
+
+        return newCart;
+    }
+
+    async order(event) {
         event.stopPropagation();
         event.preventDefault();
 
@@ -177,7 +185,8 @@ class Cart {
 
         let data = new FormData();
 
-        data.append('cart', JSON.stringify(this.cart));
+        data.append('Cart', JSON.stringify(await this.formatCart()));
+        data.append('Total price', this.totalPrice);
         data.append('Name', form.querySelector(".order__form__name").value);
         data.append('Email', form.querySelector(".order__form__email").value);
         data.append('Phone number', form.querySelector(".order__form__phone-number").value);
