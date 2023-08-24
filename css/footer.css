@@ -132,6 +132,11 @@ footer .container {
     color: var(--footer-bottom-text-color);
 }
 
+.footer-bottom__container a {
+    color: var(--footer-bottom-text-color);
+    text-decoration: underline;
+}
+
 @media(max-width: 767px) {
     .footer__nav-container::after,
     .footer__info-container::after {
