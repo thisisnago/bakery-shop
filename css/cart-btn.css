@@ -12,9 +12,7 @@
     opacity .2s ease-in-out;
     transform: scale(0);
 
-    /* border: 2px solid var(--default-color);*/
     border-radius: 50%;
-    /* overflow: hidden; */
     background-color: var(--light-color);
     box-shadow: 0 0 10px var(--shadow-color);
 
@@ -37,9 +35,6 @@
     height: 40px;
 }
 
-/* .cart-btn__container.active svg {
-    animation: .5s 1 showButton;
-} */
 
 .cart-btn__container.animate svg {
     animation: .3s 1 animateButton;
