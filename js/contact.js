@@ -45,8 +45,6 @@ class Contact {
             }
           }).then(response => {
             if (response.ok) {
-                // showAlert("success", "Thanks for your submission!");
-                // generalModalFunction();
                 showInfoPopup("succes", "Thanks for your submission!");
                 form.reset()
             } else {

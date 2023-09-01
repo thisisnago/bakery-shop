@@ -14,8 +14,6 @@ class Cart {
 
     addEventListeners() {
         document.querySelector(".cart-btn").addEventListener('click', this.showCart.bind(this));
-        // document.querySelector(".order-btn").addEventListener('click', this.order.bind(this));
-        // document.querySelector(".clear-cart-btn").addEventListener('click', this.clearCart.bind(this));
         document.querySelector(".clear-cart-btn").addEventListener('click', this.clearCartAlert.bind(this));
         this.cartContainer.querySelector(".proceed-to-checkout-btn").addEventListener("click", this.toggleCartAndOrderModals.bind(this));
         this.orderModalContainer.querySelector(".back-btn").addEventListener("click", this.toggleCartAndOrderModals.bind(this));
@@ -35,7 +33,6 @@ class Cart {
 
     async renderCart() {
         let cartDomString = ``;
-        // let total = 0;
         this.totalPrice = 0
 
         let totalProductsAmount = 0;
@@ -54,7 +51,6 @@ class Cart {
                 totalProductsAmount = Object.keys(this.cart).length;
             }
             document.querySelector(".cart-btn__container").classList.add("active");
-            // document.querySelector(".cart-btn__badge").innerHTML = Object.keys(this.cart).length;
             if (totalProductsAmount <= 9) {
                 document.querySelector(".cart-btn__badge").innerHTML = totalProductsAmount;
             } else {
@@ -204,7 +200,6 @@ class Cart {
                 this.saveCart();
                 this.renderCart();
                 this.hideModal(this.orderModalContainer);
-                // generalModalFunction();
                 showInfoPopup("succes", "Thanks for your purchase!")
             } else {
                 response.json().then(data => {
