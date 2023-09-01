@@ -1,15 +1,3 @@
-// function showAlert(type, message) {
-//     const alertContainer = document.querySelector(".alert");
-//     alertContainer.innerHTML = message;
-//     toggleAlertModal();
-//     setTimeout(toggleAlertModal, 3000); 
-//     alertContainer.classList.remove(type);
-    
-//     function toggleAlertModal() {
-//         alertContainer.classList.toggle("active");
-//     }
-// }
-
 function showAlert(type, message) { // success or error
     const alertContainer = document.querySelector(".alert-container");
      
