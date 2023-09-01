@@ -2,7 +2,6 @@
     const loader = document.querySelector(".loader");
 
     window.onload = function() {
-        console.log("ready");
         loader.classList.remove("active");
         loader.querySelector(".loader__icon").classList.remove("active");
         document.body.classList.remove("lock");

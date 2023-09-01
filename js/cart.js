@@ -31,7 +31,6 @@ class Cart {
     hideModal(modal) {
         modal.classList.remove("active");
         document.body.classList.remove("lock");
-        console.log("+");
     }
 
     async renderCart() {
