@@ -124,26 +124,6 @@
     padding: 15px 0;
 }
 
-/* .product-card__btn {
-    padding: 10px 20px;
-    font-weight: bold;
-    background-color: var(--default-color);
-    border: 1px solid var(--default-color);
-    border-radius: 5px;
-    color: var(--light-color);
-    cursor: pointer;
-}
-
-.product-card__btn:hover {
-    color: var(--default-color);
-    background-color: var(--light-color);
-}
-
-.product-card__btn:active {
-    color: var(--default-color);
-    background-color: var(--product-card-active-btn-color);
-} */
-
 @media(min-width: 480px) {
     .product-card {
         margin: 10px 1.5%;

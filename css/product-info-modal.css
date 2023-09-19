@@ -71,12 +71,6 @@
     justify-content: space-evenly;
 }
 
-/* @media (min-width: 400px) {
-    .product-info-modal {
-        width: 70%;
-    }
-} */
-
 @media (min-width: 480px) {
     .product-info-modal {
         width: 65%;
@@ -92,12 +86,6 @@
         height: 60%;
     }
 }
-/* 
-@media (min-width: 650px) {
-    .product-info-modal {
-        width: 50%;
-    }
-} */
 
 @media (min-width: 768px) {
     .product-info-modal {
