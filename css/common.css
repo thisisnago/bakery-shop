@@ -116,26 +116,6 @@ button {
     user-select: none;
 }
 
-/* .btn {
-    /* width: 130px;
-    height: 50px; ///
-    display: block;
-    padding: 10px 20px;
-    border: 1px solid var(--light-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.2s;
-    color: var(--light-color);
-    transition: 0.2s;
-}
-
-.btn:hover {
-    background-color: var(--light-color);
-    color: var(--default-color);
-} */
-
 .btn {
     padding: 10px 20px;
     font-weight: bold;
