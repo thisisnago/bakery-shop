@@ -8,7 +8,7 @@
 
     opacity: 0;
     visibility: hidden;
-    transition: visibility .45s linear 0s, opacity 0.45s 0s;  
+    transition: visibility .45s linear 0s, opacity 0.45s 0s;
     z-index: 100;
 }
 
@@ -24,10 +24,10 @@
     border: 2px solid;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--shadow-color);
-    
+
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     text-align: center;
 }
 
